@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@(Html.DevExtreme().DataGrid<Pickleball_project.Models.Client>()
+    .DataSource(ds => ds.Mvc()
+        .Controller("ApiClients")
+        .LoadAction("Get")
+        .InsertAction("Post")
+        .UpdateAction("Put")
+        .DeleteAction("Delete")
+        .Key("id")
+    )
+    .SearchPanel(s => s.Visible(true))
+    .RemoteOperations(true)
+    .Columns(columns => {
+
+        @*columns.AddFor(m => m.id);*@
+
+        columns.AddFor(m => m.Firstname);
+
+        columns.AddFor(m => m.Lastname);
+
+        columns.AddFor(m => m.Gender);
+
+        columns.AddFor(m => m.Birthdate);
+
+        columns.AddFor(m => m.Email);
+
+        columns.AddFor(m => m.Adress);
+
+        columns.AddFor(m => m.City);
+
+        columns.AddFor(m => m.Zip);
+
+        columns.AddFor(m => m.Country);
+
+        columns.AddFor(m => m.PhoneNumber);
+
+        columns.AddFor(m => m.FirstNameEmergencyContact);
+
+        columns.AddFor(m => m.LastNameEmergencyContact);
+
+        columns.AddFor(m => m.EmergencyPhone);
+
+        columns.AddFor(m => m.PlayedCategory);
+
+        columns.AddFor(m => m.Group);
+    })
+    .Editing(e => e
+        .AllowAdding(true)
+        .AllowUpdating(true)
+        .AllowDeleting(true)
+    )
+)
