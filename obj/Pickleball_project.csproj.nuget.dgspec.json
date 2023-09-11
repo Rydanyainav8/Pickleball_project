@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\Pickleball_project.csproj": {}
+    "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\Pickleball_project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\Pickleball_project.csproj": {
+    "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\Pickleball_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\Pickleball_project.csproj",
+        "projectUniqueName": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\Pickleball_project.csproj",
         "projectName": "Pickleball_project",
-        "projectPath": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\Pickleball_project.csproj",
+        "projectPath": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\Pickleball_project.csproj",
         "packagesPath": "C:\\Users\\arakotondravao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\obj\\",
+        "outputPath": "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\reclone_pickleball\\Pickleball_project\\NuGet.Config",
+          "C:\\Users\\arakotondravao\\Documents\\PROJECT_PRO\\Pickleball_project\\NuGet.Config",
           "C:\\Users\\arakotondravao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -28,7 +28,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files\\DevExpress 23.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.devexpress.com/lIAvOQg9Xp91vMJvQucqXSFdHSSdLkOtaDlZSwqTuri8WtjYaN/api": {}
         },

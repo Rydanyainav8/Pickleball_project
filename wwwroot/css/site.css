@@ -1,18 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300&family=Open+Sans&family=Rubik&family=Russo+One&family=Titan+One&family=Ubuntu&display=swap');
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+* {
+    /*    font-family: 'Ubuntu', sans-serif;*/
+    /*    font-family: 'Open Sans', sans-serif;*/
+    /*    font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Titan One';
+    font-size: 27px;
+    color: #494747e6 !important;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
 }

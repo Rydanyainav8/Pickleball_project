@@ -2,7 +2,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Liste des clients inscrits dans la base de donnée</h2>
 
 @(Html.DevExtreme().DataGrid<Pickleball_project.Models.Client>()
     .DataSource(ds => ds.Mvc()
@@ -15,6 +15,15 @@
     )
     .SearchPanel(s => s.Visible(true))
     .RemoteOperations(true)
+    .ShowBorders(true)
+    .ShowColumnLines(false)
+    .ShowRowLines(false)
+    .RowAlternationEnabled(true)
+
+    .Pager(p =>
+    {
+        p.ShowNavigationButtons(true);
+    })
     .Columns(columns => {
 
         @*columns.AddFor(m => m.id);*@
@@ -23,7 +32,7 @@
 
         columns.AddFor(m => m.Lastname);
 
-        columns.AddFor(m => m.Gender);
+        columns.AddFor(m => m.Gender).Width(30);
 
         columns.AddFor(m => m.Birthdate);
 
@@ -45,13 +54,20 @@
 
         columns.AddFor(m => m.EmergencyPhone);
 
-        columns.AddFor(m => m.PlayedCategory);
+        columns.AddFor(m => m.PlayedCategory).Width(30);
 
         columns.AddFor(m => m.Group);
     })
-    .Editing(e => e
+    .Editing(e => e.Mode(GridEditMode.Popup)
         .AllowAdding(true)
         .AllowUpdating(true)
         .AllowDeleting(true)
+        .UseIcons(true)
+        .Popup(p => p
+            .Title("Client Info")
+            .ShowTitle(true)
+            .Width(700)
+            .Height(525)
     )
 )
+    )
